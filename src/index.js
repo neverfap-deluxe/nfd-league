@@ -1,29 +1,18 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-
-import { RouteProvider, Route } from 'react-router5';
 import { ApolloProvider } from 'react-apollo';
 
-import client from '../client/src/graphql/client';
-import router from './router';
+import client from './graphql/client';
 
-import * as serviceWorker from '../client/src/serviceWorker';
+import * as serviceWorker from './serviceWorker';
 
-import App from '../client/src/app/App';
+import App from './app/App';
 // import Page404 from './app/pages/Page404';
 
 const Index = () => (
-    <ApolloProvider client={client}>
-      <RouteProvider router={router}>
-        <Route>{({ route }) => {
-          if (route !== null) {
-            return <App client={client} route={route}/>
-          // } else {
-          //   return <Page404/>
-          }
-        }}</Route>
-      </RouteProvider>
-    </ApolloProvider>
+  <ApolloProvider client={client}>
+    <App client={client}/>
+  </ApolloProvider>
 );
 
 const rootElement = document.getElementById("root");

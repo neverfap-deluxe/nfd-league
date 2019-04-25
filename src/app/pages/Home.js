@@ -1,30 +1,22 @@
 import * as React from 'react';
-import { Query } from 'react-apollo';
-import HOMEPAGE from '../../graphql/queries/homepage';
+
+import AccountabilityMessagesLineGraph from '../components/AccountabilityMessagesLineGraph';
+// import AccountabilityReactsLineGraph from '../components/AccountabilityReactsLineGraph';
+// import DbUsers../components/AccountabilityReactsLineGraphersLineGraph';
 
 class Home extends React.Component {
-
   render() {
-
     return (
-      <Query query={HOMEPAGE}>
-        {({ data, client }) => {
-          return (
-            <div>
-              <h1>NeverFap Deluxe League</h1>
-              <p>Welcome to the NeverFap Deluxe League!</p>
-              <div>
-                <h2>Total Participants to date: </h2>
-              </div>
+      <div>
+        <h1>NeverFap Deluxe League</h1>
+        <p>Welcome to the NeverFap Deluxe League!</p>
 
-            </div>
-          )      
-        }
-      }
-    </Query>
-  )
-  };
-
+        <AccountabilityMessagesLineGraph/>
+        {/* <AccountabilityReactsLineGraph/>
+        <DbUsersLineGraph/> */}
+      </div>
+    );
+  }
 };
 
 export default Home;

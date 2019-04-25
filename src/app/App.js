@@ -1,25 +1,20 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
-import Navbar from './components/Navbar';
 import Main from './modules/Main';
 
-import './reset.css';
+import './css/app.scss';
 
 class App extends React.Component {
 
   render() {
-    const { client, route } = this.props;
+    const { client } = this.props;
         
     return (
       <React.Fragment>
         <AppHelmet/>
         <div>
-          <Navbar
-            route={route}
-          />
           <Main 
-            route={route}
             client={client}
           />
         </div>
