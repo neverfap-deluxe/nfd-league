@@ -30,7 +30,7 @@ const client = new ApolloClient({
   link: ApolloLink.from([
     stateLink, 
     // new HttpLink({ uri: 'http://localhost:2001/graphql' })
-    new HttpLink({ uri: 'http://198.199.67.180:2001/graphql' })
+    new HttpLink({ uri: 'https://staging.neverfapdeluxe.com/graphql' })
   ]),
 });
 
