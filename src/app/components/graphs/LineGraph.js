@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { ResponsiveLine } from '@nivo/line';
 
-class ResponsiveLineGraph extends React.Component {
+class LineGraph extends React.Component {
   render() {
     const { data } = this.props;
     return (
@@ -34,6 +34,8 @@ class ResponsiveLineGraph extends React.Component {
             "legendOffset": 36,
             "legendPosition": "middle"
         }}
+        enableGridX={false}
+        enableGridY={false}
         axisLeft={{
             "orient": "left",
             "tickSize": 5,
@@ -90,4 +92,4 @@ class ResponsiveLineGraph extends React.Component {
   };
 }
 
-export default ResponsiveLineGraph;
+export default LineGraph;

@@ -2,22 +2,18 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet';
 
 import Main from './modules/Main';
-
 import './css/app.scss';
 
 class App extends React.Component {
 
   render() {
     const { client } = this.props;
-        
     return (
       <React.Fragment>
         <AppHelmet/>
-        <div>
-          <Main 
-            client={client}
-          />
-        </div>
+        <Main 
+          client={client}
+        />
       </React.Fragment>
     );
   };

@@ -7,3 +7,6 @@ npm install --save react-router-dom node-sass
 npm install react-router-dom
 
 npm i -S @nivo/bar @nivo/line
+
+
+// ah, so the issue I was having I was importing RouterProvider instead of RouteProvider LOL

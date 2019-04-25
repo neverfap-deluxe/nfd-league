@@ -1,6 +1,6 @@
 import gql from 'graphql-tag';
 
-const GET_LINE_GRAPH = gql`
+export const GET_LINE_GRAPH = gql`
   query getLineGraph($collection_type: String, $from: Int, $to: Int) {
     getLineGraph(collection_type: $collection_type, from: $from, to: $to) {
       id
@@ -8,10 +8,9 @@ const GET_LINE_GRAPH = gql`
       data {
         x
         y
+        __typename
       }
+      __typename
     }
   }
 `;
-
-
-export default GET_LINE_GRAPH;

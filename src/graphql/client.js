@@ -7,7 +7,6 @@ import { withClientState } from 'apollo-link-state';
 import typeDefs from './typeDefs';
 
 const defaults = {
-  dbUsers: null, // exists
 };
 
 const preloadedState = window.__APOLLO_STATE__;
@@ -34,6 +33,8 @@ const client = new ApolloClient({
 window.snapSaveState = () => ({
   __APOLLO_STATE__: client.extract(),
 });
+
+// const client = new ApolloClient({ uri: 'http://localhost:2001/graphql' });
 
 export default client;
 
