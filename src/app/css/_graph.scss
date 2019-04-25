@@ -1,16 +1,29 @@
 .graph__display__range {
+  display: flex;
 
-}
+  .graph__display__range__button {
+    margin-right: 1rem;
+    border: 4px solid black;
+    padding: 1rem;
+    cursor: pointer;
+  }
 
-.graph__display__range__7 {
+  .graph__display__range__button:hover {
+    
+  }
 
-}
+  .graph__display__range__7 {
 
-.graph__display__range__30 {
+  }
+  
+  .graph__display__range__30 {
+    
+  }
   
 }
 
+
 .graph__line__container {
-  height: 200px;
+  height: 300px;
 }
 

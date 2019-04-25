@@ -41,9 +41,11 @@ class Home extends React.Component {
               </div>
 
               <div className="homepage__charts">
-                <h3 className="homepage__chart__title">Accountability Messages</h3>
+                <h3 className="homepage__chart__title">Daily Accountability Messages</h3>
                 <LineGraphRender collection_type='accountability_messages'/>
+                <h3 className="homepage__chart__title">Daily Accountability Emoji Reacts</h3>
                 <LineGraphRender collection_type='accountability_reacts'/>
+                <h3 className="homepage__chart__title">Daily Participant New Registrations</h3>
                 <LineGraphRender collection_type='db_users'/>
               </div>
             </div>

@@ -25,15 +25,15 @@ class LineGraph extends React.Component {
         }}
         axisTop={null}
         axisRight={null}
-        axisBottom={{
-            "orient": "bottom",
-            "tickSize": 5,
-            "tickPadding": 5,
-            "tickRotation": 0,
-            "legend": "transportation",
-            "legendOffset": 36,
-            "legendPosition": "middle"
-        }}
+        // axisBottom={{
+        //     "orient": "bottom",
+        //     "tickSize": 0,
+        //     "tickPadding": 15,
+        //     "tickRotation": 0,
+        //     "legend": "date",
+        //     "legendOffset": 36,
+        //     "legendPosition": "middle"
+        // }}
         enableGridX={false}
         enableGridY={false}
         axisLeft={{
@@ -41,8 +41,8 @@ class LineGraph extends React.Component {
             "tickSize": 5,
             "tickPadding": 5,
             "tickRotation": 0,
-            "legend": "count",
-            "legendOffset": -40,
+            "legend": "total",
+            "legendOffset": -80,
             "legendPosition": "middle"
         }}
         colors={{
@@ -63,29 +63,29 @@ class LineGraph extends React.Component {
         motionStiffness={90}
         motionDamping={15}
         legends={[
-            {
-                "anchor": "left",
-                "direction": "column",
-                "justify": false,
-                "translateX": 0,
-                "translateY": 0,
-                "itemWidth": 100,
-                "itemHeight": 20,
-                "itemsSpacing": 4,
-                "symbolSize": 20,
-                "symbolShape": "circle",
-                "itemDirection": "left-to-right",
-                "itemTextColor": "#777",
-                "effects": [
-                    {
-                        "on": "hover",
-                        "style": {
-                            "itemBackground": "rgba(0, 0, 0, .03)",
-                            "itemOpacity": 1
-                        }
-                    }
-                ]
-            }
+            // {
+            //     "anchor": "top",
+            //     "direction": "column",
+            //     "justify": false,
+            //     "translateX": 0,
+            //     "translateY": 0,
+            //     "itemWidth": 100,
+            //     "itemHeight": 20,
+            //     "itemsSpacing": 4,
+            //     "symbolSize": 20,
+            //     "symbolShape": "circle",
+            //     "itemDirection": "left-to-right",
+            //     "itemTextColor": "#777",
+            //     "effects": [
+            //         {
+            //             "on": "hover",
+            //             "style": {
+            //                 "itemBackground": "rgba(0, 0, 0, .03)",
+            //                 "itemOpacity": 1
+            //             }
+            //         }
+            //     ]
+            // }
         ]}
       />
     )

@@ -12,8 +12,8 @@ class LineGraphRender extends React.Component {
 
     this.state = {
       variables: {
-        to: 0,
-        from: -7,
+        to: -1,
+        from: -8,
         collection_type: props.collection_type,
       }
     }
@@ -45,10 +45,10 @@ class LineGraphRender extends React.Component {
           return (
             <div className="graph__container">
               <div className="graph__display__range">
-                <div className="graph__display__range__7" onClick={() => this.changeVariables(-8, -1)}>
+                <div className="graph__display__range__button graph__display__range__7" onClick={() => this.changeVariables(-8, -1)}>
                   7 day range
                 </div>
-                <div className="graph__display__range__30" onClick={() => this.changeVariables(-31, -1)}>
+                <div className="graph__display__range__button graph__display__range__30" onClick={() => this.changeVariables(-31, -1)}>
                   30 day range
                 </div>
               </div>
