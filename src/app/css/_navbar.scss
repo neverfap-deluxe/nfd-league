@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+
+  .navbar__link {
+    padding: 1.6rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .navbar__link:hover { 
+    background: lightgrey;
+  }
+}

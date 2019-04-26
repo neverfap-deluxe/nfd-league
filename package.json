@@ -18,6 +18,7 @@
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.0",
     "react-router-dom": "^5.0.0",
+    "react-router-sitemap": "^1.2.0",
     "react-router5": "^7.1.0",
     "react-scripts": "3.0.0",
     "router5": "^7.0.2"

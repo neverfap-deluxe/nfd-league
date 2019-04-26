@@ -15,6 +15,7 @@ class LineGraphRender extends React.Component {
         to: -1,
         from: -8,
         collection_type: props.collection_type,
+        graph_type: props.graph_type,
       }
     }
   }

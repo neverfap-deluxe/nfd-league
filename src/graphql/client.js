@@ -29,8 +29,8 @@ const client = new ApolloClient({
   cache,
   link: ApolloLink.from([
     stateLink,
-    // new HttpLink({ uri: 'http://localhost:2001/graphql' })
-    new HttpLink({ uri: 'https://staging.neverfapdeluxe.com/graphql' })
+    new HttpLink({ uri: 'http://localhost:2001/graphql' })
+    // new HttpLink({ uri: 'https://staging.neverfapdeluxe.com/graphql' })
   ]),
   fetchOptions: {
     mode: 'no-cors',

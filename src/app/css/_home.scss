@@ -1,19 +1,55 @@
 .homepage {
-  padding: 4rem;
+  padding: 0.5rem;
+  min-height: 100vh;
 
   .homepage__title {
     font-size: 4rem;
+  }
+
+  .homepage__subtitle {
+    margin-top: 3rem;
   }
 
   .homepage__description {
     
   }
 
-  .homepage__charts {
+  .stats__charts {
     // max-width: 700px;
   }
 
   .homepage__stats {
+      display: flex;
+      flex-wrap: wrap;
 
+    .homepage__stat__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      flex: 1;
+      .homepage__stat__title {
+        
+      }
+      .homepage__stat__number {
+
+      }
+    }
   }
 }
+
+
+@media screen and (min-width: 420px) {
+  .homepage {
+    padding: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .homepage {
+    padding: 4rem;
+  }
+}
+
