@@ -13,6 +13,8 @@
 
 .stat {
   display: flex;
+  flex-direction: column;
+  
   .stat__block {
     flex: 1;
   }

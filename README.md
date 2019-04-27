@@ -4,8 +4,7 @@ npm i -S apollo-boost apollo-cache-inmemory apollo-client apollo-link-http apoll
 dev
 react-snap
 npm install --save react-router-dom node-sass
-npm install react-router-dom
-
+npm install react-router-dom react-iframe
 npm i -S @nivo/bar @nivo/line
 
 

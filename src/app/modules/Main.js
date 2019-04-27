@@ -9,6 +9,7 @@ import About from '../pages/About';
 import Posts from '../pages/Posts';
 
 import Header from './Header';
+import Footer from './Footer';
 
 class Main extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class Main extends React.Component {
         <Route path="/participate" component={Participate} />
         <Route path="/about" component={About} />
         <Route path="/posts" component={Posts} />
+        <Footer/>
       </Router>
     )
   };
