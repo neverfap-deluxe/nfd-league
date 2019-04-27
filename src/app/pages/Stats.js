@@ -21,7 +21,10 @@ class Stats extends React.Component {
          
           return (
             <div className="stats page">
-              <h1 className="stats__title title">Stats.</h1>
+              <div className="single__hero">
+                <h1 className="participate__title title">Stats</h1>
+                <h2 className="participate__description">NeverFap Deluxe League statistics</h2>
+              </div>
 
               <div style={{ marginTop: '3rem', marginBottom: '3rem' }}></div>
 

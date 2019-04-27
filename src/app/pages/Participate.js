@@ -20,9 +20,9 @@ class Participate extends React.Component {
             <div className="participate page">
               <div className="single__hero">
                 <h1 className="participate__title title">Participate</h1>
-                <h2 className="participate__description">Here's how you can participate in the program.</h2>
+                <h2 className="participate__description">Here's how you can participate in the program</h2>
               </div>
-              
+
               <div style={{ marginTop: '3rem', marginBottom: '3rem' }}></div>
               
               <div className="single__wrapper">
@@ -35,6 +35,8 @@ class Participate extends React.Component {
                   <h3>Step 2 - Join the Discord</h3>
                   <p>Once you feel comfortable with this idea of Healthy Coping Mechanisms and Meditation, feel free to join the Discord where all the magic happens!</p>
                   <p><a className="link" href="https://discord.gg/YETRkSj">https://discord.gg/YETRkSj</a></p>
+                  <h3>Step 3 - Enjoy!</h3>
+                  <p>Don't forget to have fun ^^.</p>
                 </div>
               </div>
             </div>

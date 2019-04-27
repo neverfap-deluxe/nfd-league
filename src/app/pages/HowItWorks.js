@@ -28,18 +28,27 @@ class HowItWorks extends React.Component {
               <div className="single__wrapper">
                 <div className="single__content">
                   <p>NeverFap Deluxe League is an accountability system that is designed to help you with your porn addiction.</p>
-                  <p>The whole process is actually explained in a lot more detail here: <a href="https://neverfapdeluxe.com/accountability-program">https://neverfapdeluxe.com/accountability-program</a>.</p>
+                  <p>The whole process is actually explained in a lot more detail here: <a className="link" href="https://neverfapdeluxe.com/accountability-program">https://neverfapdeluxe.com/accountability-program</a>.</p>
                   <p>Essentially how it works is that you'll post once a day into our #accountability channel in Discord listing a number of things.</p>
                   
-                  <p>- The Date</p>
-                  <p>- Healthy Coping mechanisms</p>
-                  <p>- TO Improve</p>
-                  <p>Doing this is effective for a number of reasons:</p>
-                  <p>  - By journaling your progress it will help you become aware of the physical and mental actions you're making on a daily basis, therefore building your awareness which is vital for change.</p>
-                  <p>  - By focusing on Healthy Coping Mechanisms it empowers you to focus on what you achieved for that day.</p>
-                  <p>  - By focusing on what you aim to improve you also focus on your actions in the future, and how you</p>
-                  <p>  - You have the ability to gain inspiration from the community and see what they're doing.</p>
-                
+                  <hr class="hrul"/>
+                    <ul>
+                      <li>- Today's date</li>
+                      <li>- A list of healthy coping mechanisms you practiced for that day.</li>  
+                      <li>- A list of things you're going to do differently tomorrow.</li>  
+                    </ul>
+                  <hr class="hrul__bottom"/>
+
+                  <h3>Doing this is effective for a number of reasons:</h3>
+
+                  <hr class="hrul"/>
+                    <ul>
+                      <li>- By journaling your progress it will help you become aware of the physical and mental actions you're making on a daily basis, therefore building your awareness which is vital for change.</li>
+                      <li>- By focusing on Healthy Coping Mechanisms it empowers you to focus on what you achieved for that day.</li>  
+                      <li>- By focusing on what you aim to improve you also focus on your actions in the future.</li>  
+                      <li>- You have the ability to gain inspiration from the community and see what they're doing.</li>  
+                    </ul>
+                  <hr class="hrul__bottom"/>
                </div>
               </div>
 

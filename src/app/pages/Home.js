@@ -37,9 +37,11 @@ class Home extends React.Component {
 
           return (
             <div className="homepage page">
-              <h1 className="homepage__title title">NeverFap Deluxe League</h1>
-              <h2 className="homepage__description">Where porn addiction comes to die.</h2>
-              
+              <div className="single__hero">
+                <h1 className="homepage__title title">NeverFap Deluxe League</h1>
+                <h2 className="homepage__description">Where porn addiction comes to die.</h2>
+              </div>
+
               <div style={{ marginTop: '3rem', marginBottom: '3rem' }}></div>
 
               <HomepageStats 

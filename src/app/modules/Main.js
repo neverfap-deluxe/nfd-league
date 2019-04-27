@@ -8,13 +8,13 @@ import Participate from '../pages/Participate';
 import About from '../pages/About';
 import Posts from '../pages/Posts';
 
-import Navbar from './Navbar';
+import Header from './Header';
 
 class Main extends React.Component {
   render() {
     return (
       <Router>
-        <Navbar/>
+        <Header/>
         <Route exact path="/" component={Home} />
         <Route path="/stats" component={Stats} />
         <Route path="/how-it-works" component={HowItWorks} />

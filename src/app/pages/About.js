@@ -19,8 +19,8 @@ class Participate extends React.Component {
           return (
             <div className="participate page">
               <div className="single__hero">
-                <h1 className="participate__title title">About.</h1>
-                <h2 className="participate__description">The NeverFap Deluxe League.</h2>
+                <h1 className="participate__title title">About</h1>
+                <h2 className="participate__description">The NeverFap Deluxe League</h2>
               </div>
 
               <div className="single__wrapper">
