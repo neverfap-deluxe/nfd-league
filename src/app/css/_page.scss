@@ -7,7 +7,8 @@
   }
 
   .subtitle {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     padding: 0.8rem;
   
     background: -moz-linear-gradient(45deg, rgba(255,46,182,1) 0%, rgba(227,152,2,1) 100%); /* ff3.6+ */
@@ -22,6 +23,7 @@
 }
 
 
+
 .page__content {
   
 }
@@ -30,8 +32,8 @@
   height: 4px;
   background: cyan;
   width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 
 @media screen and (min-width: 420px) {

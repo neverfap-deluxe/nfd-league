@@ -11,7 +11,7 @@ class HomepageStats extends React.Component {
     return (
       <div className="stat">
         <div className="stat__block">
-          <h3 className="homepage__subtitle">Lifetime Stats</h3>
+          <h3 className="subtitle homepage__subtitle">Lifetime Stats</h3>
 
           <div className="homepage__stats">
             <div className="homepage__stat__block">
@@ -30,7 +30,7 @@ class HomepageStats extends React.Component {
         </div>
       
         <div className="stat__block">
-          <h3 className="homepage__subtitle">Last 24 Hours</h3>
+          <h3 className="subtitle homepage__subtitle">Last 24 Hours</h3>
 
           <div className="homepage__stats">
             <div className="homepage__stat__block">

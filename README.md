@@ -9,3 +9,11 @@ npm i -S @nivo/bar @nivo/line
 
 
 // ah, so the issue I was having I was importing RouterProvider instead of RouteProvider LOL
+
+// for react sitemap
+// https://www.amitsn.com/blog/how-to-generate-a-sitemap-for-your-react-website-with-dynamic-content
+
+npm install --save-dev babel-cli
+npm install --save-dev babel-preset-es2015
+npm install --save-dev babel-preset-react
+npm install --save-dev babel-register

@@ -31,15 +31,15 @@ class Stats extends React.Component {
               <div className="stats__charts">
                 <div style={{ marginTop: '3rem' }}></div>
 
-                <h2 className="stats__chart__title">Daily Accountability Messages</h2>
+                <h2 className="subtitle stats__chart__title">Daily Accountability Messages</h2>
                 <LineGraphRender collection_type='accountability_messages' graph_type={null}/>
 
                 <div style={{ marginTop: '3rem' }}></div>
-                <h2 className="stats__chart__title">Daily Accountability Emoji Reacts</h2>
+                <h2 className="subtitle stats__chart__title">Daily Accountability Emoji Reacts</h2>
                 <LineGraphRender collection_type='accountability_reacts' graph_type={null}/>
 
                 <div style={{ marginTop: '3rem' }}></div>
-                <h2 className="stats__chart__title">Daily Participant New Registrations</h2>
+                <h2 className="subtitle stats__chart__title">Daily Participant New Registrations</h2>
                 <LineGraphRender collection_type='db_users' graph_type={null}/>
               </div>
 
