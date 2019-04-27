@@ -18,9 +18,11 @@ class Participate extends React.Component {
           
           return (
             <div className="participate page">
-              <h1 className="participate__title title">Participate</h1>
-              <h2 className="participate__description">Here's how you can participate in the program.</h2>
-
+              <div className="single__hero">
+                <h1 className="participate__title title">Participate</h1>
+                <h2 className="participate__description">Here's how you can participate in the program.</h2>
+              </div>
+              
               <div style={{ marginTop: '3rem', marginBottom: '3rem' }}></div>
               
               <div className="single__wrapper">

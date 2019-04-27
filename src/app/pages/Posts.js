@@ -32,9 +32,11 @@ class Posts extends React.Component {
 
           return (
             <div className="posts page">
-              <h1 className="posts__title title">Accountability Posts</h1>
-              <h2 className="posts__description">The list of posts.</h2>
-              
+              <div className="single__hero">
+                <h1 className="posts__title title">Accountability Posts</h1>
+                <h2 className="posts__description">The list of posts.</h2>
+              </div>
+
               <div style={{ marginTop: '3rem', marginBottom: '3rem' }}></div>
               
               <LatestAccountabilityPosts/>

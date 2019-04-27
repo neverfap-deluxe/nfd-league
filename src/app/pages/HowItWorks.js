@@ -18,8 +18,11 @@ class HowItWorks extends React.Component {
 
           return (
             <div className="howitworks page">
-              <h1 className="howitworks__title title">How It Works</h1>
-              <h2 className="howitworks__description">Here's what the system can do for your porn addiction.</h2>
+              <div className="single__hero">
+                <h1 className="howitworks__title title">How It Works</h1>
+                <h2 className="howitworks__description">Here's what the system can do for your porn addiction.</h2>
+              </div>
+
               <div style={{ marginTop: '3rem', marginBottom: '3rem' }}></div>
 
               <div className="single__wrapper">
