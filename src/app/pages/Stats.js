@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Query } from 'react-apollo';
 
 import LineGraphRender from '../components/graphs/LineGraphRender';
+import LoadingPage from '../components/loading/LoadingPage';
 
 import { HOMEPAGE } from '../../graphql/queries/homepage';
 
@@ -12,33 +13,30 @@ class Stats extends React.Component {
         query={HOMEPAGE}
         >
         {({ loading, error, data, client }) => {
-          if (loading) return "Loading graph...";
+          if (loading) return <LoadingPage/>;
           if (error) return `Error! ${error.message}`;
-
-          const {
-            getDbUsersStats,
-            getAccountabilityMessagesStats,
-            getAccountabilityReactsStats,
-            getAllDbUsers,
-            getAllAccountabilityMessages,
-            getAllAccountabilityReacts,
-            getAllAccountabilityTally
-          } = data;
 
           // - 7/30 day totals
           // - Complete emoji reacts collection.
          
           return (
-            <div className="stats">
-              <h1 className="stats__title">NeverFap Deluxe League</h1>
-              <h2 className="stats__description">Welcome to the NeverFap Deluxe League!</h2>
+            <div className="stats page">
+              <h1 className="stats__title title">Stats.</h1>
+
+              <div style={{ marginTop: '3rem', marginBottom: '3rem' }}></div>
 
               <div className="stats__charts">
-                <h3 className="stats__chart__title">Daily Accountability Messages</h3>
+                <div style={{ marginTop: '3rem' }}></div>
+
+                <h2 className="stats__chart__title">Daily Accountability Messages</h2>
                 <LineGraphRender collection_type='accountability_messages' graph_type={null}/>
-                <h3 className="stats__chart__title">Daily Accountability Emoji Reacts</h3>
+
+                <div style={{ marginTop: '3rem' }}></div>
+                <h2 className="stats__chart__title">Daily Accountability Emoji Reacts</h2>
                 <LineGraphRender collection_type='accountability_reacts' graph_type={null}/>
-                <h3 className="stats__chart__title">Daily Participant New Registrations</h3>
+
+                <div style={{ marginTop: '3rem' }}></div>
+                <h2 className="stats__chart__title">Daily Participant New Registrations</h2>
                 <LineGraphRender collection_type='db_users' graph_type={null}/>
               </div>
 

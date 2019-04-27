@@ -1,9 +1,6 @@
 .homepage {
-  padding: 0.5rem;
-  min-height: 100vh;
 
   .homepage__title {
-    font-size: 4rem;
   }
 
   .homepage__subtitle {
@@ -13,6 +10,13 @@
   .homepage__description {
     
   }
+
+.stat {
+  display: flex;
+  .stat__block {
+    flex: 1;
+  }
+}
 
   .stats__charts {
     // max-width: 700px;
@@ -27,13 +31,16 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
-      flex: 1;
+
+      max-width: 200px;
+
       .homepage__stat__title {
-        
+        padding: 1rem;
+        text-align: center;
       }
       .homepage__stat__number {
-
+        padding: 1rem;
+        font-size: 2rem;
       }
     }
   }
@@ -42,14 +49,12 @@
 
 @media screen and (min-width: 420px) {
   .homepage {
-    padding: 1rem;
   }
 }
 
 
 @media screen and (min-width: 768px) {
   .homepage {
-    padding: 4rem;
   }
 }
 

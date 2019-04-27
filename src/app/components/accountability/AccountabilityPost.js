@@ -6,7 +6,7 @@ class AccountabilityPost extends React.Component {
     
     return (
       <div className='accountability__post'>
-        <div className='accountability__post__username'>{username}</div>
+        {/* <div className='accountability__post__username'>{username}</div> */}
         <div className='accountability__post__content'>{content}</div>
       </div>
     )

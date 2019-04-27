@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Query } from 'react-apollo';
 
 import LoadingPage from '../components/loading/LoadingPage';
+import HomepageStats from '../components/home/HomepageStats';
 import LatestAccountabilityPosts from '../components/accountability/LatestAccountabilityPosts';
 import LineGraphRender from '../components/graphs/LineGraphRender';
 
@@ -35,38 +36,17 @@ class Home extends React.Component {
         //  - Visit the website.
 
           return (
-            <div className="homepage">
-              <h1 className="homepage__title">NeverFap Deluxe League</h1>
+            <div className="homepage page">
+              <h1 className="homepage__title title">NeverFap Deluxe League</h1>
               <h2 className="homepage__description">Where porn addiction comes to die.</h2>
               
-              <h3 className="homepage__subtitle">Latest Stats</h3>
+              <div style={{ marginTop: '3rem', marginBottom: '3rem' }}></div>
 
-              <div className="homepage__stats">
-                <div className="homepage__stat__block">
-                  <div className="homepage__stat__title">Total lifetime participants:</div>
-                  <div className="homepage__stat__number">{getDbUsersStats.total}</div>
-                </div>
-                <div className="homepage__stat__block">
-                  <div className="homepage__stat__title">New participants in the last 24 hours:</div>
-                  <div className="homepage__stat__number">{getDbUsersStats.total24Hour}</div>
-                </div>
-                <div className="homepage__stat__block">
-                  <div className="homepage__stat__title">Total #accountability posts:</div>
-                  <div className="homepage__stat__number">{getAccountabilityMessagesStats.total}</div>
-                </div>
-                <div className="homepage__stat__block">
-                  <div className="homepage__stat__title">Total #accountability posts in the last 24 hours:</div>
-                  <div className="homepage__stat__number">{getAccountabilityMessagesStats.total24Hour}</div>
-                </div>
-                <div className="homepage__stat__block">
-                  <div className="homepage__stat__title">Total #accountability emoji reacts:</div>
-                  <div className="homepage__stat__number">{getAccountabilityReactsStats.total}</div>
-                </div>
-                <div className="homepage__stat__block">
-                  <div className="homepage__stat__title">Total #accountability emoji reacts in the last 24 hours:</div>
-                  <div className="homepage__stat__number">{getAccountabilityReactsStats.total24Hour}</div>
-                </div>
-              </div>
+              <HomepageStats 
+                getDbUsersStats={getDbUsersStats}
+                getAccountabilityMessagesStats={getAccountabilityMessagesStats}
+                getAccountabilityReactsStats={getAccountabilityReactsStats}
+              />
 
               <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
                 <LineGraphRender collection_type='accountability_messages' graph_type='accumulative'/>

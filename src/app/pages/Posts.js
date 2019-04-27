@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { Query } from 'react-apollo';
 
-import LineGraphRender from '../components/graphs/LineGraphRender';
-
 import { HOMEPAGE } from '../../graphql/queries/homepage';
 
+import LatestAccountabilityPosts from '../components/accountability/LatestAccountabilityPosts';
+import LoadingPage from '../components/loading/LoadingPage';
 class Posts extends React.Component {
   render() {
     return (
@@ -12,7 +12,7 @@ class Posts extends React.Component {
         query={HOMEPAGE}
         >
         {({ loading, error, data, client }) => {
-          if (loading) return "Loading graph...";
+          if (loading) return <LoadingPage/>;
           if (error) return `Error! ${error.message}`;
 
           const {
@@ -31,10 +31,13 @@ class Posts extends React.Component {
          //  - accountability posts
 
           return (
-            <div className="posts">
-              <h1 className="posts__title">NeverFap Deluxe League</h1>
-              <h2 className="posts__description">Welcome to the NeverFap Deluxe League!</h2>
+            <div className="posts page">
+              <h1 className="posts__title title">Accountability Posts</h1>
+              <h2 className="posts__description">The list of posts.</h2>
               
+              <div style={{ marginTop: '3rem', marginBottom: '3rem' }}></div>
+              
+              <LatestAccountabilityPosts/>
             </div>
           );
         }}

@@ -1,4 +1,7 @@
 .latest__accountability__posts {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
   
 .accountability__post {
@@ -6,6 +9,9 @@
 
   padding: 2rem;
   margin-bottom: 1rem;
+
+  width: 50%;
+  max-width: 250px;
 
   .accountability__post__username {
     

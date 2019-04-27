@@ -3,6 +3,7 @@ import * as React from 'react';
 import { Query } from 'react-apollo';
 
 import LineGraph from '../graphs/LineGraph';
+import LoadingGraph from '../loading/LoadingGraph';
 
 import { GET_LINE_GRAPH } from '../../../graphql/queries/getLineGraph';
 
@@ -27,7 +28,7 @@ class LineGraphRender extends React.Component {
         from,
         to,
       }
-    })
+    });
   }
 
   render() {    
@@ -39,7 +40,7 @@ class LineGraphRender extends React.Component {
         variables={variables}
         >
         {({ loading, error, data, client }) => {
-          if (loading) return "Loading graph...";
+          if (loading) return <LoadingGraph/>;
           if (error) return `Error! ${error.message}`;
           const { getLineGraph } = data; 
 
