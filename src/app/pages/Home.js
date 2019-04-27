@@ -23,10 +23,10 @@ class Home extends React.Component {
             getDbUsersStats,
             getAccountabilityMessagesStats,
             getAccountabilityReactsStats,
-            getAllDbUsers,
-            getAllAccountabilityMessages,
-            getAllAccountabilityReacts,
-            getAllAccountabilityTally
+            // getAllDbUsers,
+            // getAllAccountabilityMessages,
+            // getAllAccountabilityReacts,
+            // getAllAccountabilityTally
           } = data;
 
         //  - Total participants etc.
@@ -39,7 +39,7 @@ class Home extends React.Component {
           return (
             <div className="homepage page">
               <div className="single__hero">
-                <h1 className="homepage__title title">NeverFap Deluxe League</h1>
+                <h1 className="title">NeverFap Deluxe League</h1>
                 <h2 className="homepage__description">Where porn addiction comes to die.</h2>
               </div>
 
@@ -60,12 +60,14 @@ class Home extends React.Component {
                 />
               </div>
 
-              <div style={{ marginTop: "3rem", marginBottom: "3rem" }}>
-                <h3>Daily Accountability Messages</h3>
-                <LineGraphRender collection_type='accountability_messages' graph_type='accumulative'/>
-              </div>
+              <div className="divider"></div>
+
+              <h2 className="subtitle">Daily Accountability Messages</h2>
+              <LineGraphRender collection_type='accountability_messages' graph_type='accumulative'/>
               
-              <h3 className="homepage__subtitle">Latest Accountability Posts</h3>
+              <div className="divider"></div>
+
+              <h2 className="subtitle">Latest Accountability Posts</h2>
               <LatestAccountabilityPosts/>
             </div>
           );

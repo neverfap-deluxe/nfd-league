@@ -9,7 +9,7 @@ import { LATEST_ACCOUNTABILITY_MESSAGES } from '../../../graphql/queries/account
 class LatestAccountabilityPosts extends React.Component {
   render() {
     return (
-      <Query query={LATEST_ACCOUNTABILITY_MESSAGES} variables={{limit: 10}}>
+      <Query query={LATEST_ACCOUNTABILITY_MESSAGES} variables={{limit: 48}}>
         {({ loading, error, data, client }) => {
           if (loading) return <LoadingPage/>;
           if (error) return `Error! ${error.message}`;

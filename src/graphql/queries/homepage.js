@@ -1,27 +1,27 @@
 import gql from 'graphql-tag';
 
 export const HOMEPAGE = gql`{
-    getAllDbUsers {
-      id
-      email
-      username
-      created_at    
-    }
+    # getAllDbUsers {
+    #   id
+    #   email
+    #   username
+    #   created_at    
+    # }
 
-    getAllAccountabilityMessages {
-      id
-      username
-      content
-      created_at
-    }
+    # getAllAccountabilityMessages {
+    #   id
+    #   username
+    #   content
+    #   created_at
+    # }
 
-    getAllAccountabilityReacts {
-      id
-      username
-      emoji_id
-      emoji_name
-      created_at
-    }
+    # getAllAccountabilityReacts {
+    #   id
+    #   username
+    #   emoji_id
+    #   emoji_name
+    #   created_at
+    # }
     
     getAccountabilityMessagesStats {
       total

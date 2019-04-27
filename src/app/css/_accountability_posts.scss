@@ -1,6 +1,6 @@
 .latest__accountability__posts {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
   
@@ -14,7 +14,7 @@
   max-width: 250px;
 
   .accountability__post__username {
-    
+    margin-bottom: 2rem;
   }
   .accountability__post__content {
     
