@@ -1,34 +1,37 @@
-"use strict";
+// require('babel-register');
+ 
+// const router = require('./src/app/modules/Routes').default;
+// const Sitemap = require('react-router-sitemap');
+// // const Sitemap = require('../').default;
 
-var _react = _interopRequireDefault(require("react"));
+// (
+//   new Sitemap(router)
+//       .build('https://neverfapdeluxe.com/')
+//       .save('./sitemap.xml')
+// );
 
-var _reactRouter = require("react-router");
+// https://github.com/kuflash/react-router-sitemap/blob/HEAD/api.md
 
-var _reactRouterSitemap = _interopRequireDefault(require("react-router-sitemap"));
+// import { sitemapBuilder as buildSitemap } from 'react-router-sitemap';
+// const { sitemapBuilder } = require('react-router-sitemap');
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+// const paths = ['/', '/statistics', '/how-it-works', '/participate', '/about'];
+// const hostname = 'https://league.neverfapdeluxe.com';
+// const sitemap = sitemapBuilder(hostname, paths);
 
-var sitemap = new _reactRouterSitemap.default(_react.default.createElement(_reactRouter.Route, {
-  path: "/"
-})).build('https://neverfapdeluxe.com').save("./build/sitemap.xml");
-
-// console.log(sitemap);
-
-// // require('babel-register');
-// require("babel-register")({
-//   presets: ["es2015", "react"]
-// });
-
-// const router = require('./src/app/modules/main').default;
-// const Sitemap = require('../').default;
-
-// function generateSitemap() {
-//   return (
-//     new Sitemap(router)
-//         .build("https://neverfapdeluxe.com")
-//         .save("./build/sitemap.xml")
-//   );
-// }
-
-// generateSitemap();
-
+const sm = require('sitemap');
+const fs = require('fs');
+ 
+const sitemap = sm.createSitemap({
+    hostname: 'https://neverfapdeluxe.com',
+    cacheTime: 600000,
+    urls: [
+        { url: '/' , changefreq: 'weekly', priority: 0.8, lastmodrealtime: true },
+        { url: '/statistics', changefreq: 'weekly', priority: 0.8, lastmodrealtime: true },
+        { url: '/how-it-works', changefreq: 'weekly', priority: 0.8, lastmodrealtime: true }, 
+        { url: '/participate', changefreq: 'weekly', priority: 0.8, lastmodrealtime: true },
+        { url: '/about', changefreq: 'weekly', priority: 0.8, lastmodrealtime: true } 
+    ]
+});
+ 
+fs.writeFileSync("build/static/sitemap.xml", sitemap.toString());

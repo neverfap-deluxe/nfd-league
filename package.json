@@ -22,7 +22,8 @@
     "react-router-sitemap": "^1.2.0",
     "react-router5": "^7.1.0",
     "react-scripts": "3.0.0",
-    "router5": "^7.0.2"
+    "router5": "^7.0.2",
+    "sitemap": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

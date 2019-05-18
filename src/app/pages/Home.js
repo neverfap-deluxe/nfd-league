@@ -62,9 +62,33 @@ class Home extends React.Component {
 
               <div className="divider"></div>
 
-              <h2 className="subtitle">Daily Accountability Messages</h2>
+              <div className="join__the__discord__button__container">
+                <a href="https://discord.gg/YETRkSj" className="join__the__discord__button">
+                  Join The League
+                </a>
+                <div className="join__the__discord__button__divide">
+                </div>
+                <a href="https://neverfapdeluxe.com/" className="join__the__discord__button">
+                  Visit The Website
+                </a>
+              </div>
+
+              {/* TODO: Section about the NFD Bot */}
+
+              <div className="divider"></div>
+
+              <h2 className="subtitle">NeverFap Deluxe Bot</h2>
+              <div className="nfd__bot__container">
+                
+              </div>
+
+              <div className="divider"></div>
+
+              <h2 className="subtitle">Accumulative Accountability Messages</h2>
+              {/* TODO LineGraphRender takes an initial object of what days it should be */}
               <LineGraphRender collection_type='accountability_messages' graph_type='accumulative'/>
               
+
               <div className="divider"></div>
 
               <h2 className="subtitle">Latest Accountability Posts</h2>

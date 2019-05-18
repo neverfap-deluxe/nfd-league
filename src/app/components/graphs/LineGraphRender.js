@@ -38,6 +38,7 @@ class LineGraphRender extends React.Component {
       <Query 
         query={GET_LINE_GRAPH}
         variables={variables}
+        fetchPolicy='network-only'
         >
         {({ loading, error, data, client }) => {
           if (loading) return <LoadingGraph/>;

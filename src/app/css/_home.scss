@@ -45,6 +45,35 @@
   margin-bottom: 1rem!important;
 }
 
+.join__the__discord__button__container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  // box-sizing: border-box;
+
+  .join__the__discord__button__divide {
+    flex: 1;
+  }
+  .join__the__discord__button {
+    flex: 6;
+    width: 90%;
+    font-size: 2rem;
+    border: 5px solid black;
+    padding: 1.5rem;  
+  color: black;
+
+  }  
+}
+
+.join__the__discord__button:hover {
+  box-shadow: -5px 5px 0px 0px cyan;
+}
+
+.nfd__bot__container {
+  
+}
+
 
 @media screen and (min-width: 420px) {
   .homepage {

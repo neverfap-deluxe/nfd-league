@@ -6,7 +6,6 @@ const types = `
 
 export default types;
 
-
 // type DbUser {
 //   id: String
 //   discord_id: String

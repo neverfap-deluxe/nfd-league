@@ -11,7 +11,7 @@ class Header extends React.Component {
         </Link>
         <ul class="header__links">
           <Link className="header__link__wrapper" to="/participate"><div className="header__link">Participate</div></Link>
-          <Link className="header__link__wrapper" to="/stats"><div className="header__link">Stats</div></Link>
+          <Link className="header__link__wrapper" to="/statistics"><div className="header__link">Statistics</div></Link>
           <Link className="header__link__wrapper" to="/how-it-works"><div className="header__link">Learn</div></Link>
           {/* <Link className="header__link__wrapper" to="/posts"><div className="header__link">posts.</div></Link> */}
           <Link className="header__link__wrapper" to="/about"><div className="header__link">About</div></Link>
