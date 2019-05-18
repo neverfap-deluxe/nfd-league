@@ -34,4 +34,4 @@ const sitemap = sm.createSitemap({
     ]
 });
  
-fs.writeFileSync("build/static/sitemap.xml", sitemap.toString());
+fs.writeFileSync("build/sitemap.xml", sitemap.toString());
