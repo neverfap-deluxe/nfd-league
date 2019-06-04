@@ -1,2 +1,0 @@
-# nfd-league
-league

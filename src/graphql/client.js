@@ -31,8 +31,8 @@ const client = new ApolloClient({
   cache,
   link: ApolloLink.from([
     stateLink,
-    // new HttpLink({ uri: window.location.hostname === 'localhost' ? 'https://staging.neverfapdeluxe.com/graphql' : 'https://staging.neverfapdeluxe.com/graphql' }) // http://localhost:2001/graphql
-    new HttpLink({ uri: 'http://localhost:2001/graphql' }) // 
+    new HttpLink({ uri: window.location.hostname === 'localhost' ? 'https://staging.neverfapdeluxe.com/graphql' : 'https://staging.neverfapdeluxe.com/graphql' }) // http://localhost:2001/graphql
+    // new HttpLink({ uri: 'http://localhost:2001/graphql' }) // 
   ]),
   fetchOptions: {
     mode: 'no-cors',
@@ -43,7 +43,8 @@ window.snapSaveState = () => ({
   __APOLLO_STATE__: client.extract(),
 });
 
+
+
 // const client = new ApolloClient({ uri: 'http://localhost:2001/graphql' });
 
 export default client;
-

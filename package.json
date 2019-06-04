@@ -20,9 +20,7 @@
     "react-iframe": "^1.8.0",
     "react-router-dom": "^5.0.0",
     "react-router-sitemap": "^1.2.0",
-    "react-router5": "^7.1.0",
     "react-scripts": "3.0.0",
-    "router5": "^7.0.2",
     "sitemap": "^2.2.0"
   },
   "scripts": {

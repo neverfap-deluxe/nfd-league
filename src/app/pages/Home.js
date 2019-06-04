@@ -75,12 +75,12 @@ class Home extends React.Component {
 
               {/* TODO: Section about the NFD Bot */}
 
-              <div className="divider"></div>
+              {/* <div className="divider"></div>
 
               <h2 className="subtitle">NeverFap Deluxe Bot</h2>
               <div className="nfd__bot__container">
                 
-              </div>
+              </div> */}
 
               <div className="divider"></div>
 

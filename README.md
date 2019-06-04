@@ -1,20 +1,22 @@
-main
-npm i -S apollo-boost apollo-cache-inmemory apollo-client apollo-link-http apollo-link-state graphql react-apollo react-helmet react-router5 router5 
+# NeverFap Deluxe League
 
-dev
-react-snap
-npm install --save react-router-dom node-sass
-npm install react-router-dom react-iframe
-npm i -S @nivo/bar @nivo/line
+Website: https://league.neverfapdeluxe.com/
+
+NeverFap Deluxe League is the front-end for The NeverFap Deluxe Discord Server. It displays a heap of different information about the participants in the NeverFap Deluxe #accountability program.
+
+Released under the [GNU GPLv3 licence](https://github.com/neverfap-deluxe/nfd-league/blob/master/LICENSE).
 
 
-// ah, so the issue I was having I was importing RouterProvider instead of RouteProvider LOL
+## Tech
 
-// for react sitemap
-// https://www.amitsn.com/blog/how-to-generate-a-sitemap-for-your-react-website-with-dynamic-content
+Frontend: HTML, SCSS, React, React-Router, GraphQL, Nivo Charts
 
-npm install --save-dev babel-cli
-npm install --save-dev babel-preset-es2015
-npm install --save-dev babel-preset-react
-npm install --save-dev babel-register
 
+## Local Setup
+
+- Download node.js to your computer
+- Go to the root folder of the project
+- `npm install` will install all the libraries
+- `npm start` will start the project
+
+NOTE: On local this project will use the production Discord Server by default to retrieve all it's data. 

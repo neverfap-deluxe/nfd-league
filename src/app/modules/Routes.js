@@ -1,11 +1,12 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
+
 import Home from '../pages/Home';
 import Stats from '../pages/Stats';
 import HowItWorks from '../pages/HowItWorks';
 import Participate from '../pages/Participate';
 import About from '../pages/About';
-import Posts from '../pages/Posts';
+// import Posts from '../pages/Posts';
 
 export default (
   <Switch>
