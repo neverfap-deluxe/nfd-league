@@ -23,7 +23,7 @@ const sm = require('sitemap');
 const fs = require('fs');
  
 const sitemap = sm.createSitemap({
-    hostname: 'https://neverfapdeluxe.com',
+    hostname: 'https://league.neverfapdeluxe.com',
     cacheTime: 600000,
     urls: [
         { url: '/' , changefreq: 'weekly', priority: 0.8, lastmodrealtime: true },
